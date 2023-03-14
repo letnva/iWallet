@@ -13,9 +13,11 @@ struct AddItems: View {
 
     @State private var note = ""
     @State private var type = "Расход"
+    @State private var category = "Продукты"
     @State private var amount = 0.0
 
     let types = ["Расход", "Доход"]
+    let categories = ["Продукты", "Транспорт", "Одежда", "Подписки", "Дети", "Подарки"]
 
     var body: some View {
         NavigationView {
@@ -29,6 +31,12 @@ struct AddItems: View {
                 }
                 .pickerStyle(.segmented)
 
+                Picker("Тип", selection: $category) {
+                    ForEach(categories, id: \.self) {
+                        Text($0)
+                    }
+                }
+                
                 TextField("Сумма", value: $amount, format: .currency(code: "USD"))
                     .keyboardType(.decimalPad)
             }
@@ -38,6 +46,7 @@ struct AddItems: View {
                     let item = Item(context: moc)
                     item.id = UUID()
                     item.note = note
+                    item.category = category
                     item.amount = amount
                     item.type = type
                     

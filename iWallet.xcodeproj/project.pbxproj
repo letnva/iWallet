@@ -14,6 +14,7 @@
 		AD71E84329C0A78300926DB0 /* iWallet.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AD71E84129C0A78300926DB0 /* iWallet.xcdatamodeld */; };
 		AD71E84C29C0A89400926DB0 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD71E84B29C0A89400926DB0 /* Home.swift */; };
 		AD71E84E29C0A8D400926DB0 /* AddItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD71E84D29C0A8D400926DB0 /* AddItems.swift */; };
+		AD71E85029C0B69700926DB0 /* ItemDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD71E84F29C0B69700926DB0 /* ItemDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		AD71E84229C0A78300926DB0 /* iWallet.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = iWallet.xcdatamodel; sourceTree = "<group>"; };
 		AD71E84B29C0A89400926DB0 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		AD71E84D29C0A8D400926DB0 /* AddItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItems.swift; sourceTree = "<group>"; };
+		AD71E84F29C0B69700926DB0 /* ItemDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				AD71E83629C0A78200926DB0 /* iWalletApp.swift */,
 				AD71E84A29C0A86200926DB0 /* View */,
 				AD71E84B29C0A89400926DB0 /* Home.swift */,
+				AD71E84F29C0B69700926DB0 /* ItemDetailView.swift */,
 				AD71E84D29C0A8D400926DB0 /* AddItems.swift */,
 				AD71E83A29C0A78300926DB0 /* Assets.xcassets */,
 				AD71E84929C0A85500926DB0 /* Data */,
@@ -162,6 +165,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD71E85029C0B69700926DB0 /* ItemDetailView.swift in Sources */,
 				AD71E84029C0A78300926DB0 /* DataController.swift in Sources */,
 				AD71E84C29C0A89400926DB0 /* Home.swift in Sources */,
 				AD71E84329C0A78300926DB0 /* iWallet.xcdatamodeld in Sources */,
