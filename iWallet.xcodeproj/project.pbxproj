@@ -73,11 +73,6 @@
 			children = (
 				AD71E83629C0A78200926DB0 /* iWalletApp.swift */,
 				AD71E84A29C0A86200926DB0 /* View */,
-				AD71E84B29C0A89400926DB0 /* Home.swift */,
-				AD913DF429C1DCC900594C7F /* ItemsView.swift */,
-				AD71E86B29C1B96B00926DB0 /* AddCategoryView.swift */,
-				AD71E84F29C0B69700926DB0 /* ItemDetailView.swift */,
-				AD71E84D29C0A8D400926DB0 /* AddItems.swift */,
 				AD71E83A29C0A78300926DB0 /* Assets.xcassets */,
 				AD71E84929C0A85500926DB0 /* Data */,
 				AD71E83C29C0A78300926DB0 /* Preview Content */,
@@ -109,6 +104,11 @@
 		AD71E84A29C0A86200926DB0 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				AD71E84B29C0A89400926DB0 /* Home.swift */,
+				AD913DF429C1DCC900594C7F /* ItemsView.swift */,
+				AD71E86B29C1B96B00926DB0 /* AddCategoryView.swift */,
+				AD71E84F29C0B69700926DB0 /* ItemDetailView.swift */,
+				AD71E84D29C0A8D400926DB0 /* AddItems.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
