@@ -31,7 +31,7 @@ struct AddItems: View {
                 }
                 .pickerStyle(.segmented)
 
-                Picker("Тип", selection: $category) {
+                Picker("Категория", selection: $category) {
                     ForEach(categories, id: \.self) {
                         Text($0)
                     }
