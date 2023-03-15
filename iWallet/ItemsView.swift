@@ -10,8 +10,12 @@ import SwiftUI
 struct ItemsView: View {
     
     @Environment(\.managedObjectContext) var moc
-    @FetchRequest(sortDescriptors: [SortDescriptor(\.id, order: .reverse)]) var items: FetchedResults<Item>
-    @Environment(\.dismiss) var dismiss
+//    @FetchRequest(sortDescriptors: [SortDescriptor(\.id, order: .reverse)]) var items: FetchedResults<Item>
+//    @Environment(\.dismiss) var dismiss
+    @FetchRequest(
+        sortDescriptors: [NSSortDescriptor(keyPath: \Item.category, ascending: true)],
+        predicate: NSPredicate(format: "category =[c] %@", "Продукты"),
+        animation: .default) var items: FetchedResults<Item>
     
     var body: some View {
         List {

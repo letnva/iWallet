@@ -39,7 +39,6 @@
 		AD71E86629C1AF7D00926DB0 /* Category+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Category+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		AD71E86B29C1B96B00926DB0 /* AddCategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCategoryView.swift; sourceTree = "<group>"; };
 		AD913DF429C1DCC900594C7F /* ItemsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsView.swift; sourceTree = "<group>"; };
-		ADC6230329C1C4DD001E6DF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,7 +71,6 @@
 		AD71E83529C0A78200926DB0 /* iWallet */ = {
 			isa = PBXGroup;
 			children = (
-				ADC6230329C1C4DD001E6DF6 /* Info.plist */,
 				AD71E83629C0A78200926DB0 /* iWalletApp.swift */,
 				AD71E84A29C0A86200926DB0 /* View */,
 				AD71E84B29C0A89400926DB0 /* Home.swift */,
