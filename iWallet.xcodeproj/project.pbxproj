@@ -71,11 +71,11 @@
 		AD71E83529C0A78200926DB0 /* iWallet */ = {
 			isa = PBXGroup;
 			children = (
-				AD71E83629C0A78200926DB0 /* iWalletApp.swift */,
 				AD71E84A29C0A86200926DB0 /* View */,
-				AD71E83A29C0A78300926DB0 /* Assets.xcassets */,
 				AD71E84929C0A85500926DB0 /* Data */,
+				AD913DF629C1FBBC00594C7F /* Other */,
 				AD71E83C29C0A78300926DB0 /* Preview Content */,
+				AD71E83A29C0A78300926DB0 /* Assets.xcassets */,
 			);
 			path = iWallet;
 			sourceTree = "<group>";
@@ -111,6 +111,14 @@
 				AD71E84D29C0A8D400926DB0 /* AddItems.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		AD913DF629C1FBBC00594C7F /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				AD71E83629C0A78200926DB0 /* iWalletApp.swift */,
+			);
+			path = Other;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
