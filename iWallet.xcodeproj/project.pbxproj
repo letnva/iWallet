@@ -15,6 +15,10 @@
 		AD71E84C29C0A89400926DB0 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD71E84B29C0A89400926DB0 /* Home.swift */; };
 		AD71E84E29C0A8D400926DB0 /* AddItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD71E84D29C0A8D400926DB0 /* AddItems.swift */; };
 		AD71E85029C0B69700926DB0 /* ItemDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD71E84F29C0B69700926DB0 /* ItemDetailView.swift */; };
+		AD71E86729C1AF7D00926DB0 /* Item+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD71E86329C1AF7D00926DB0 /* Item+CoreDataClass.swift */; };
+		AD71E86829C1AF7D00926DB0 /* Item+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD71E86429C1AF7D00926DB0 /* Item+CoreDataProperties.swift */; };
+		AD71E86929C1AF7D00926DB0 /* Category+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD71E86529C1AF7D00926DB0 /* Category+CoreDataClass.swift */; };
+		AD71E86A29C1AF7D00926DB0 /* Category+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD71E86629C1AF7D00926DB0 /* Category+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +31,10 @@
 		AD71E84B29C0A89400926DB0 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		AD71E84D29C0A8D400926DB0 /* AddItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItems.swift; sourceTree = "<group>"; };
 		AD71E84F29C0B69700926DB0 /* ItemDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailView.swift; sourceTree = "<group>"; };
+		AD71E86329C1AF7D00926DB0 /* Item+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Item+CoreDataClass.swift"; sourceTree = "<group>"; };
+		AD71E86429C1AF7D00926DB0 /* Item+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Item+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		AD71E86529C1AF7D00926DB0 /* Category+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Category+CoreDataClass.swift"; sourceTree = "<group>"; };
+		AD71E86629C1AF7D00926DB0 /* Category+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Category+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +90,10 @@
 		AD71E84929C0A85500926DB0 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				AD71E86329C1AF7D00926DB0 /* Item+CoreDataClass.swift */,
+				AD71E86429C1AF7D00926DB0 /* Item+CoreDataProperties.swift */,
+				AD71E86529C1AF7D00926DB0 /* Category+CoreDataClass.swift */,
+				AD71E86629C1AF7D00926DB0 /* Category+CoreDataProperties.swift */,
 				AD71E83F29C0A78300926DB0 /* DataController.swift */,
 				AD71E84129C0A78300926DB0 /* iWallet.xcdatamodeld */,
 			);
@@ -167,10 +179,14 @@
 			files = (
 				AD71E85029C0B69700926DB0 /* ItemDetailView.swift in Sources */,
 				AD71E84029C0A78300926DB0 /* DataController.swift in Sources */,
+				AD71E86829C1AF7D00926DB0 /* Item+CoreDataProperties.swift in Sources */,
 				AD71E84C29C0A89400926DB0 /* Home.swift in Sources */,
 				AD71E84329C0A78300926DB0 /* iWallet.xcdatamodeld in Sources */,
 				AD71E84E29C0A8D400926DB0 /* AddItems.swift in Sources */,
 				AD71E83729C0A78200926DB0 /* iWalletApp.swift in Sources */,
+				AD71E86A29C1AF7D00926DB0 /* Category+CoreDataProperties.swift in Sources */,
+				AD71E86929C1AF7D00926DB0 /* Category+CoreDataClass.swift in Sources */,
+				AD71E86729C1AF7D00926DB0 /* Item+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
