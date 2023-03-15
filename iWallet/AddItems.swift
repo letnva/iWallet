@@ -9,6 +9,7 @@ import SwiftUI
 
 struct AddItems: View {
     @Environment(\.managedObjectContext) var moc
+    @FetchRequest(sortDescriptors: [SortDescriptor(\.id, order: .reverse)]) var categorys: FetchedResults<Category>
     @Environment(\.dismiss) var dismiss
 
     @State private var note = ""
@@ -32,8 +33,8 @@ struct AddItems: View {
                 .pickerStyle(.segmented)
 
                 Picker("Категория", selection: $category) {
-                    ForEach(categories, id: \.self) {
-                        Text($0)
+                    ForEach(categorys) { category in
+                        Text(category.name ?? "Добавьте категории")
                     }
                 }
                 

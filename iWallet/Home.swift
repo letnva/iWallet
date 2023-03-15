@@ -9,7 +9,7 @@ import SwiftUI
 
 struct Home: View {
     @Environment(\.managedObjectContext) var moc
-    @FetchRequest(sortDescriptors: [SortDescriptor(\.id, order: .reverse)]) var items: FetchedResults<Item>
+    //@FetchRequest(sortDescriptors: [SortDescriptor(\.id, order: .reverse)]) var items: FetchedResults<Item>
     //@FetchRequest(sortDescriptors: [SortDescriptor(\.name, order: .reverse)]) var categorys: FetchedResults<Category>
     
     @FetchRequest(

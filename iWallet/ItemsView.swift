@@ -20,16 +20,20 @@ struct ItemsView: View {
     var body: some View {
         List {
             ForEach(items) { item in
-                HStack {
-                    VStack(alignment: .leading) {
-                        Text(item.category ?? "")
-                            .font(.headline)
-                        Text(item.type ?? "")
+                NavigationLink {
+                    ItemDetailView(item: item)
+                } label: {
+                    HStack {
+                        VStack(alignment: .leading) {
+                            Text(item.category ?? "")
+                                .font(.headline)
+                            Text(item.type ?? "")
+                        }
+                        
+                        Spacer()
+                        
+                        Text(item.amount, format: .currency(code: "USD"))
                     }
-                    
-                    Spacer()
-                    
-                    Text(item.amount, format: .currency(code: "USD"))
                 }
             }
         }
