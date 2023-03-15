@@ -20,6 +20,7 @@
 		AD71E86929C1AF7D00926DB0 /* Category+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD71E86529C1AF7D00926DB0 /* Category+CoreDataClass.swift */; };
 		AD71E86A29C1AF7D00926DB0 /* Category+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD71E86629C1AF7D00926DB0 /* Category+CoreDataProperties.swift */; };
 		AD71E86C29C1B96B00926DB0 /* AddCategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD71E86B29C1B96B00926DB0 /* AddCategoryView.swift */; };
+		AD913DF529C1DCC900594C7F /* ItemsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD913DF429C1DCC900594C7F /* ItemsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,8 @@
 		AD71E86529C1AF7D00926DB0 /* Category+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Category+CoreDataClass.swift"; sourceTree = "<group>"; };
 		AD71E86629C1AF7D00926DB0 /* Category+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Category+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		AD71E86B29C1B96B00926DB0 /* AddCategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCategoryView.swift; sourceTree = "<group>"; };
+		AD913DF429C1DCC900594C7F /* ItemsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsView.swift; sourceTree = "<group>"; };
+		ADC6230329C1C4DD001E6DF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,9 +72,11 @@
 		AD71E83529C0A78200926DB0 /* iWallet */ = {
 			isa = PBXGroup;
 			children = (
+				ADC6230329C1C4DD001E6DF6 /* Info.plist */,
 				AD71E83629C0A78200926DB0 /* iWalletApp.swift */,
 				AD71E84A29C0A86200926DB0 /* View */,
 				AD71E84B29C0A89400926DB0 /* Home.swift */,
+				AD913DF429C1DCC900594C7F /* ItemsView.swift */,
 				AD71E86B29C1B96B00926DB0 /* AddCategoryView.swift */,
 				AD71E84F29C0B69700926DB0 /* ItemDetailView.swift */,
 				AD71E84D29C0A8D400926DB0 /* AddItems.swift */,
@@ -187,6 +192,7 @@
 				AD71E84329C0A78300926DB0 /* iWallet.xcdatamodeld in Sources */,
 				AD71E84E29C0A8D400926DB0 /* AddItems.swift in Sources */,
 				AD71E83729C0A78200926DB0 /* iWalletApp.swift in Sources */,
+				AD913DF529C1DCC900594C7F /* ItemsView.swift in Sources */,
 				AD71E86A29C1AF7D00926DB0 /* Category+CoreDataProperties.swift in Sources */,
 				AD71E86929C1AF7D00926DB0 /* Category+CoreDataClass.swift in Sources */,
 				AD71E86C29C1B96B00926DB0 /* AddCategoryView.swift in Sources */,
@@ -322,7 +328,7 @@
 				DEVELOPMENT_TEAM = 8L7MHF74UF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = iWallet/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -351,7 +357,7 @@
 				DEVELOPMENT_TEAM = 8L7MHF74UF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = iWallet/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";

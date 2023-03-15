@@ -9,7 +9,15 @@ import SwiftUI
 
 struct Home: View {
     @Environment(\.managedObjectContext) var moc
-    @FetchRequest(sortDescriptors: [SortDescriptor(\.id, order: .reverse)]) var categorys: FetchedResults<Category>
+    @FetchRequest(sortDescriptors: [SortDescriptor(\.id, order: .reverse)]) var items: FetchedResults<Item>
+    //@FetchRequest(sortDescriptors: [SortDescriptor(\.name, order: .reverse)]) var categorys: FetchedResults<Category>
+    
+    @FetchRequest(
+        sortDescriptors: [NSSortDescriptor(keyPath: \Category.name, ascending: true)],
+        predicate: NSPredicate(format: "%@ =[c] %@", Category() as CVarArg),
+        animation: .default) var categorys: FetchedResults<Category>
+    
+    
     
     @State private var showingAddExpense = false
     @State private var showingAddCategory = false
@@ -18,7 +26,11 @@ struct Home: View {
         NavigationStack {
             List {
                 ForEach(categorys) { category in
-                    Text(category.name ?? "Unknown")
+                    NavigationLink {
+                        ItemsView()
+                    } label: {
+                        Text(category.name ?? "Unknown")
+                    }
                 }
             }
             .navigationTitle("iWallet")
@@ -50,51 +62,6 @@ struct Home: View {
     }
 }
 
-
-/* var body: some View {
- NavigationView {
- List {
- ForEach(items) { item in
- NavigationLink {
- ItemDetailView(item: item)
- } label: {
- HStack {
- VStack(alignment: .leading) {
- Text(item.category ?? "")
- .font(.headline)
- Text(item.type ?? "")
- }
- 
- Spacer()
- 
- Text(item.amount, format: .currency(code: "USD"))
- }
- }
- }
- .onDelete(perform: removeItems)
- }
- .navigationTitle("iWallet")
- .toolbar {
- Button {
- showingAddExpense = true
- } label: {
- Image(systemName: "plus")
- }
- }
- .sheet(isPresented: $showingAddExpense) {
- AddItems()
- }
- }
- }
- 
- func removeItems(at offsets: IndexSet) {
- for offset in offsets {
- let item = items[offset]
- moc.delete(item)
- }
- }
- }
- */
 struct Home_Previews: PreviewProvider {
     static var previews: some View {
         Home()
